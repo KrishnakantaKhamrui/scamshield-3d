@@ -1,0 +1,252 @@
+[
+  {
+    "id": "fake-kyc",
+    "type": "Fake KYC / Account Block",
+    "title": "Bank KYC update threat",
+    "description": "Message claims your bank account, wallet or card will be blocked unless you update KYC immediately via a link or by calling a number.",
+    "examplePhrases": ["Your account will be blocked today. Update KYC now", "Dear customer your KYC is expired click the link to avoid suspension", "Complete PAN verification within 24 hours or account will be frozen"],
+    "redFlags": ["Urgent deadline", "Link to a non-official domain", "Asks for card, PIN, OTP or net-banking login", "Generic greeting"],
+    "whatToDo": ["Do not click the link", "Open your bank's official app or website yourself", "Call the number printed on your debit card", "Report on 1930 if you shared details"],
+    "severity": 4
+  },
+  {
+    "id": "upi-collect",
+    "type": "UPI Collect Request Trick",
+    "title": "Fake 'receive money' collect request",
+    "description": "Scammer sends a UPI collect request but says you must enter your PIN to receive money. Entering the PIN sends money out.",
+    "examplePhrases": ["Approve the request and enter your UPI PIN to receive Rs 5000", "I have sent you money, accept the collect request to get it", "Enter PIN to receive refund"],
+    "redFlags": ["PIN is never needed to receive money", "Stranger or buyer pushing you to approve", "Pressure to act fast"],
+    "whatToDo": ["Decline the request", "Never enter your UPI PIN to receive money", "Block and report the UPI ID in your payment app", "Call 1930 if money was debited"],
+    "severity": 5
+  },
+  {
+    "id": "digital-arrest",
+    "type": "Digital Arrest",
+    "title": "Fake police / CBI / customs video call",
+    "description": "Caller poses as police, CBI, ED, NCB or customs, says you are linked to a crime or illegal parcel, keeps you on a video call and demands money to 'clear' your case.",
+    "examplePhrases": ["You are under digital arrest, do not disconnect the call", "A parcel in your name contains drugs, CBI will arrest you", "Transfer money to the RBI verification account to prove innocence"],
+    "redFlags": ["No agency arrests or interrogates anyone over video call", "Demand to stay on call and tell no one", "Payment to a personal or 'safe' account", "Fake uniforms or documents"],
+    "whatToDo": ["Disconnect immediately", "No agency demands money to close a case", "Tell family and call 1930", "File a complaint at cybercrime.gov.in"],
+    "severity": 5
+  },
+  {
+    "id": "task-job",
+    "type": "Fake Job / Task Scam",
+    "title": "Like-and-earn or task-based job offer",
+    "description": "Offer of easy online income for liking videos or rating products. Small payouts build trust, then you are asked to deposit larger amounts for 'premium tasks'.",
+    "examplePhrases": ["Earn Rs 3000 daily by liking YouTube videos, no experience needed", "Work from home part time, join our Telegram group", "Complete the prepaid task to unlock your commission"],
+    "redFlags": ["Unrealistic pay for trivial work", "Contact via WhatsApp or Telegram from unknown number", "Asks you to pay or deposit money", "No company details or interview"],
+    "whatToDo": ["Do not pay any deposit", "Stop all contact and leave the group", "Verify employers on official sites", "Report on 1930 and cybercrime.gov.in"],
+    "severity": 4
+  },
+  {
+    "id": "loan-app",
+    "type": "Predatory Loan App",
+    "title": "Instant loan with fee upfront or harassment",
+    "description": "Instant loan messages that demand processing fees first, or apps that take contact and gallery access and later threaten borrowers with morphed images.",
+    "examplePhrases": ["Pre-approved loan Rs 50,000 in 5 minutes, pay Rs 999 processing fee", "Install this app for instant loan without documents", "Repay today or we will message all your contacts"],
+    "redFlags": ["Upfront fee before loan", "App asks for contacts, photos and SMS permission", "Very high hidden interest", "Threats and shaming"],
+    "whatToDo": ["Do not pay advance fees", "Borrow only from RBI-registered lenders", "Uninstall the app and revoke permissions", "Report harassment to cybercrime.gov.in"],
+    "severity": 4
+  },
+  {
+    "id": "electricity-bill",
+    "type": "Electricity Bill Disconnection",
+    "title": "Power will be cut tonight",
+    "description": "SMS says your electricity connection will be disconnected tonight due to unpaid bill and asks you to call an officer or install an app.",
+    "examplePhrases": ["Your electricity will be disconnected tonight at 9:30 PM, call the officer", "Previous month bill not updated, contact 98XXXXXXXX immediately", "Pay now using this link to avoid power cut"],
+    "redFlags": ["Mobile number instead of official helpline", "Same-day deadline", "Request to install an app or pay through a link"],
+    "whatToDo": ["Check your bill on the official board website or app", "Never call the number in the SMS", "Do not install any app", "Report to the electricity provider and 1930"],
+    "severity": 3
+  },
+  {
+    "id": "lottery-prize",
+    "type": "Lottery / Prize Scam",
+    "title": "You have won a prize",
+    "description": "Claims you won a lottery, KBC prize, gift or lucky draw and asks for a fee, tax or personal details to release it.",
+    "examplePhrases": ["Congratulations you have won Rs 25 lakh in lucky draw", "Pay Rs 5000 as GST to release your prize", "Your mobile number was selected in KBC lottery"],
+    "redFlags": ["You never entered a contest", "Fee required to receive prize", "Pressure and secrecy"],
+    "whatToDo": ["Ignore and delete", "Never pay to receive a prize", "Block the sender", "Report to 1930 if you paid"],
+    "severity": 3
+  },
+  {
+    "id": "courier-customs",
+    "type": "Courier / Customs Parcel Scam",
+    "title": "Parcel stuck at customs",
+    "description": "Fake courier or customs message says a parcel is held and asks for a fee, or transfers you to a fake officer.",
+    "examplePhrases": ["Your parcel is held at customs, pay clearance fee", "FedEx: illegal items found in your package, press 1 to talk to officer", "Delivery failed, update address and pay Rs 25 redelivery fee"],
+    "redFlags": ["You are not expecting a parcel", "Small fee through a link", "Escalation to police or customs on call"],
+    "whatToDo": ["Check tracking only on the courier's official site", "Do not pay through links", "Hang up on calls transferring you to officers", "Report on 1930"],
+    "severity": 4
+  },
+  {
+    "id": "otp-vishing",
+    "type": "Bank Official OTP Call (Vishing)",
+    "title": "Caller pretending to be bank staff asks for OTP",
+    "description": "Caller says there is a suspicious transaction or card upgrade and asks you to share OTP, CVV or PIN to 'cancel' or 'verify'.",
+    "examplePhrases": ["I am calling from your bank, share the OTP to stop the fraud transaction", "Your card is being upgraded, tell me the 6 digit code", "Read out the CVV to verify your identity"],
+    "redFlags": ["Banks never ask for OTP, PIN or CVV", "Caller creates panic", "Caller already knows some of your details"],
+    "whatToDo": ["Hang up", "Never share OTP, PIN or CVV", "Call your bank using the number on your card", "Block the card if details were shared and call 1930"],
+    "severity": 5
+  },
+  {
+    "id": "fake-customer-care",
+    "type": "Fake Customer Care Number",
+    "title": "Fake support number from a search engine or social post",
+    "description": "Scammers publish fake helpline numbers for banks, e-commerce, delivery and wallets. Victims are told to install an app or share details for a refund.",
+    "examplePhrases": ["Call our toll free support to get your refund", "Customer care will help you cancel the order, share your card details", "Install this support app so we can fix your payment"],
+    "redFlags": ["Number found via search or comment, not the official app", "Asks to install screen-sharing apps", "Asks for card or UPI details for refund"],
+    "whatToDo": ["Use only helplines from the official app or website", "Never install apps on a caller's instruction", "Report fake listings to the platform", "Call 1930 if money was lost"],
+    "severity": 4
+  },
+  {
+    "id": "qr-receive-money",
+    "type": "QR Code Scam",
+    "title": "Scan this QR code to receive payment",
+    "description": "Scammer sends a QR code on marketplace chats and claims scanning it will credit money. Scanning a payment QR and entering PIN debits your account.",
+    "examplePhrases": ["Scan this QR code to receive your payment", "I will pay in advance, scan the QR and enter PIN", "Scan to get cashback"],
+    "redFlags": ["Receiving money never needs a QR scan with PIN", "Buyer sends QR instead of asking your UPI ID", "Urgency to complete quickly"],
+    "whatToDo": ["Do not scan", "Share your UPI ID or QR only to receive", "Report the account in the marketplace", "Call 1930 if money went out"],
+    "severity": 4
+  },
+  {
+    "id": "investment-group",
+    "type": "Fake Investment / Stock Tips Group",
+    "title": "Guaranteed returns via WhatsApp or Telegram group",
+    "description": "Fake stock or IPO tips groups with fake profit screenshots. Victims deposit into a fake trading app that shows gains but blocks withdrawals.",
+    "examplePhrases": ["Join our VIP group for guaranteed 30 percent monthly returns", "Invest through our app, IPO allotment assured", "Pay tax to withdraw your profit"],
+    "redFlags": ["Guaranteed high returns", "Unregistered adviser", "App not in a regulated broker list", "Fees demanded for withdrawal"],
+    "whatToDo": ["Invest only through SEBI-registered brokers", "Check advisers on the SEBI website", "Stop depositing and keep screenshots", "Report on 1930 and cybercrime.gov.in"],
+    "severity": 4
+  },
+  {
+    "id": "crypto-doubling",
+    "type": "Crypto Doubling / Giveaway",
+    "title": "Send crypto and receive double",
+    "description": "Promises to multiply crypto or fiat, often with fake celebrity endorsement or fake exchange websites.",
+    "examplePhrases": ["Send 0.1 BTC and get 0.2 BTC back instantly", "Celebrity giveaway, first 100 users get double", "Our trading bot gives 5 percent daily"],
+    "redFlags": ["Doubling promise", "Celebrity endorsement with no source", "Pressure of limited time"],
+    "whatToDo": ["Do not send funds", "Use only regulated platforms", "Report the page or account", "Call 1930 if you lost money"],
+    "severity": 4
+  },
+  {
+    "id": "sextortion",
+    "type": "Sextortion / Video Call Blackmail",
+    "title": "Recorded video call used for blackmail",
+    "description": "A stranger starts an explicit video call, records it, then threatens to send it to your contacts unless you pay.",
+    "examplePhrases": ["Pay Rs 20000 or I will send your video to all your friends", "We have recorded your video call", "Delete will cost money, send now"],
+    "redFlags": ["Threat to leak private content", "Payment demanded in minutes", "Attacker shares your contact list screenshots"],
+    "whatToDo": ["Do not pay, payment leads to more demands", "Do not delete chats, take screenshots", "Block and report the profile", "Report at cybercrime.gov.in and call 1930"],
+    "severity": 5
+  },
+  {
+    "id": "aadhaar-pan-update",
+    "type": "Fake Aadhaar / PAN Update",
+    "title": "Link or update your Aadhaar or PAN now",
+    "description": "Messages claim PAN will be deactivated or Aadhaar needs updating, with a link to a lookalike government site that steals details.",
+    "examplePhrases": ["Your PAN will be deactivated, update immediately", "Aadhaar verification pending, click here", "Link your PAN with bank account to avoid penalty"],
+    "redFlags": ["Link not on a gov.in domain", "Asks for bank login or OTP", "Threat of penalty"],
+    "whatToDo": ["Visit the official government portal by typing the address yourself", "Never share OTP", "Lock biometrics if you suspect misuse", "Report on 1930"],
+    "severity": 4
+  },
+  {
+    "id": "tax-refund",
+    "type": "Fake Income Tax Refund",
+    "title": "Refund approved, submit bank details",
+    "description": "Fake tax department message says a refund is approved and asks you to enter card or bank details on a lookalike page.",
+    "examplePhrases": ["Income tax refund of Rs 15,490 approved, click to claim", "Submit account number to receive your refund", "Refund will lapse in 24 hours"],
+    "redFlags": ["Refunds are credited to the account on your return, not claimed via link", "Non-official link", "Card details requested"],
+    "whatToDo": ["Check refund status on the official e-filing portal", "Ignore the link", "Report phishing to the tax department", "Call 1930 if details were shared"],
+    "severity": 3
+  },
+  {
+    "id": "romance-investment",
+    "type": "Romance / Matrimonial Scam",
+    "title": "Online partner asks for money or investment",
+    "description": "A friendly stranger builds trust over weeks, then asks for emergency money, gifts, customs fees or investment in a platform.",
+    "examplePhrases": ["I sent you a gift but customs needs a fee", "I am stuck abroad, please send money, I will repay", "Let me show you a platform where I make big profit"],
+    "redFlags": ["Never met in person", "Emotional urgency", "Money requests", "Stories that keep changing"],
+    "whatToDo": ["Do not send money to someone you have not met", "Reverse-search their photos", "Talk to a trusted friend", "Report on cybercrime.gov.in"],
+    "severity": 4
+  },
+  {
+    "id": "malicious-apk",
+    "type": "Malicious APK Download",
+    "title": "Install this .apk to claim a scheme, challan or reward",
+    "description": "WhatsApp message with an .apk file or link claims to be a government scheme, bank rewards or an invitation. The app steals SMS and OTPs.",
+    "examplePhrases": ["Download PM Kisan App apk to get your payment", "Wedding invitation.apk", "Install bank rewards app to redeem points"],
+    "redFlags": ["APK file sent via chat", "Installing from outside the official store", "App requests SMS and accessibility permission"],
+    "whatToDo": ["Do not install", "If installed, disconnect internet, uninstall and change passwords from another device", "Contact your bank to block cards", "Report on 1930"],
+    "severity": 5
+  },
+  {
+    "id": "e-challan",
+    "type": "Fake E-Challan",
+    "title": "Pending traffic fine, pay now",
+    "description": "SMS says a traffic challan is pending and asks you to pay through a link or APK to avoid higher penalty.",
+    "examplePhrases": ["Pending traffic challan, pay now to avoid court notice", "Vehicle fine of Rs 500, pay at the link", "Your RC will be suspended"],
+    "redFlags": ["Link not on the official parivahan.gov.in site", "No challan number or vehicle number details", "Threat of suspension"],
+    "whatToDo": ["Check challans on the official transport portal", "Do not pay via links", "Delete the message", "Report suspicious links to 1930"],
+    "severity": 3
+  },
+  {
+    "id": "remote-access",
+    "type": "Remote Access App Scam",
+    "title": "Install AnyDesk or TeamViewer to fix or refund",
+    "description": "Caller asks you to install a screen sharing app to fix a problem or process a refund, then drains your accounts while viewing your screen.",
+    "examplePhrases": ["Install AnyDesk and tell me the 9 digit code", "Share your screen so I can process the refund", "Download QuickSupport to fix your account"],
+    "redFlags": ["Caller wants control of your device", "Refund process asks to open banking apps", "Urgency"],
+    "whatToDo": ["Do not install or share the code", "If done, disconnect internet and uninstall at once", "Change banking passwords from another device", "Call 1930"],
+    "severity": 5
+  },
+  {
+    "id": "sim-block-trai",
+    "type": "SIM Block / Telecom Disconnection",
+    "title": "Your number will be disconnected",
+    "description": "Caller or SMS claims to be from the telecom regulator or provider, says your number is involved in illegal activity or KYC is pending and will be blocked.",
+    "examplePhrases": ["Your SIM will be blocked in 2 hours, press 9", "TRAI notice: illegal messages sent from your number", "Complete SIM KYC or the number will be disconnected"],
+    "redFlags": ["Automated call asking to press a key", "Transfer to fake police", "Threat of imminent block"],
+    "whatToDo": ["Do not press any key", "Contact your telecom provider through its official app", "Report at the Sanchar Saathi portal", "Call 1930 if you paid"],
+    "severity": 4
+  },
+  {
+    "id": "olx-advance",
+    "type": "Marketplace Advance Payment / Army Officer",
+    "title": "Buyer or seller pays advance via QR, claims to be in the army",
+    "description": "On OLX or Facebook Marketplace, a fake army or CRPF person asks you to scan QR or pay a small advance to 'verify' before delivery or purchase.",
+    "examplePhrases": ["I am army officer, will pay advance, scan this QR", "Pay Rs 1 to verify your account then I pay full", "My transport will pick up, send token advance"],
+    "redFlags": ["Uniform photos used as trust", "Refuses to meet or pay on delivery", "Pushes QR or collect request"],
+    "whatToDo": ["Meet in person and pay or receive on delivery", "Never scan QR to receive", "Report the listing", "Call 1930 if debited"],
+    "severity": 4
+  },
+  {
+    "id": "govt-scheme-subsidy",
+    "type": "Fake Government Scheme / Subsidy",
+    "title": "Free laptop, subsidy or scheme registration fee",
+    "description": "Messages about free laptops, scholarships, gas subsidy or cash benefit ask for registration fee or personal and bank details through unofficial sites.",
+    "examplePhrases": ["Register now to get free laptop under government scheme", "Pay Rs 299 registration to receive subsidy", "Share Aadhaar and bank details to get your benefit"],
+    "redFlags": ["Fee for a free government benefit", "Unofficial domain", "Spread by chain messages"],
+    "whatToDo": ["Check the official ministry website", "Do not pay registration fees", "Do not forward the message", "Report to 1930 if you paid"],
+    "severity": 3
+  },
+  {
+    "id": "wrong-transfer-refund",
+    "type": "Wrong Transfer Refund Scam",
+    "title": "I sent money by mistake, please return",
+    "description": "Scammer sends a small amount, then calls claiming it was a mistake and asks you to send it back, sometimes via a collect request or a fake bank-credit SMS.",
+    "examplePhrases": ["I sent Rs 5000 to your number by mistake, return it", "Please refund, I will go to the police otherwise", "Check your account and send it back to this UPI ID"],
+    "redFlags": ["Credit confirmation only via SMS screenshot", "Pressure and threats", "Request to send to a different account"],
+    "whatToDo": ["Check your actual bank balance in the official app", "Ask them to go through their bank for a dispute", "Do not send to a different account", "Report if harassed"],
+    "severity": 3
+  },
+  {
+    "id": "emergency-relative",
+    "type": "Emergency / Impersonation of Relative",
+    "title": "Hi it's me, new number, need urgent money",
+    "description": "Message from an unknown number pretends to be a relative, boss or friend with an urgent emergency and asks for immediate payment. Voice cloning can make calls convincing.",
+    "examplePhrases": ["Hi mom this is my new number, please send Rs 15000 urgently", "I am in hospital, can't talk, send money to this account", "Boss here, buy gift cards urgently and send me the codes"],
+    "redFlags": ["New unknown number", "Cannot talk or video call", "Money request to a third-party account", "Emotional pressure"],
+    "whatToDo": ["Call the person on their old number", "Ask a question only they would know", "Agree on a family safe-word", "Report on 1930 if you paid"],
+    "severity": 4
+  }
+]
