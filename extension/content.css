@@ -1,0 +1,53 @@
+.scamshield-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin: 4px;
+  border: 1px solid #536173;
+  border-radius: 999px;
+  padding: 3px 8px;
+  background: #101b2c;
+  color: #f7fbff;
+  font: 600 11px/1.4 Arial, sans-serif;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.scamshield-safe {
+  border-color: #16835d;
+  background: #0e392d;
+}
+
+.scamshield-suspicious {
+  border-color: #a56a0a;
+  background: #49320b;
+}
+
+.scamshield-scam,
+.scamshield-paused {
+  border-color: #b83c4a;
+  background: #4a1f2a;
+}
+
+.scamshield-panel {
+  position: relative;
+  z-index: 2147483647;
+  max-width: 320px;
+  margin: 4px;
+  border: 1px solid #536173;
+  border-radius: 10px;
+  padding: 12px;
+  background: #101b2c;
+  color: #f7fbff;
+  font: 13px/1.5 Arial, sans-serif;
+}
+
+.scamshield-panel ul {
+  margin: 8px 0;
+  padding-left: 18px;
+}
+
+.scamshield-panel a {
+  color: #67d9f1;
+  font-weight: 600;
+}

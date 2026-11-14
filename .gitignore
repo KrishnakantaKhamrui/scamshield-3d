@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/scamshield-3d/node_modules
 /.pnp
 .pnp.*
 .yarn/*
@@ -35,6 +36,9 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# local copy of the former nested app; the deployed app is at repository root
+/scamshield-3d/
 
 # typescript
 *.tsbuildinfo

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ScamShield Auto-protect</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main id="consent-view" hidden>
+      <h1>Enable Auto-protect?</h1>
+      <p>
+        When enabled, ScamShield reads visible incoming message text on
+        WhatsApp Web and Gmail, masks common sensitive patterns, then sends the
+        masked text to the ScamShield server for analysis. Pattern-based masking
+        can miss personal information.
+      </p>
+      <p>
+        The extension stores a random install token, hashed-text result cache,
+        and daily counters in this browser. It does not store raw messages.
+      </p>
+      <button id="consent-enable" type="button">I understand — enable Auto-protect</button>
+    </main>
+
+    <main id="controls-view" hidden>
+      <h1>ScamShield</h1>
+      <label class="switch-row">
+        <input id="enabled-toggle" type="checkbox">
+        <span id="enabled-label">Auto-protect: OFF</span>
+      </label>
+      <p id="protection-status" class="status" role="status"></p>
+      <div class="counts" aria-label="Daily scan counts">
+        <p>Messages scanned today <strong id="scanned-count">0</strong></p>
+        <p>Scams found today <strong id="scam-count">0</strong></p>
+      </div>
+      <label class="pause-row">
+        <input id="pause-site-toggle" type="checkbox">
+        <span id="pause-site-label">Pause on this site</span>
+      </label>
+      <p class="privacy-note">
+        Only masked visible message text is sent to the configured ScamShield
+        server. Scams are signals, not proof.
+      </p>
+      <button id="resume-button" type="button" hidden>Resume protection</button>
+    </main>
+    <script src="constants.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>

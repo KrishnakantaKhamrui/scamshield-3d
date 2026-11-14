@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "ScamShield Auto-protect",
+  "version": "0.1.0",
+  "description": "Opt-in scam checks for visible incoming WhatsApp and Gmail messages.",
+  "permissions": ["storage"],
+  "host_permissions": [
+    "https://web.whatsapp.com/*",
+    "https://mail.google.com/*",
+    "http://localhost:3000/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "ScamShield Auto-protect",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://web.whatsapp.com/*"],
+      "js": ["constants.js", "content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["https://mail.google.com/*"],
+      "js": ["constants.js", "content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}

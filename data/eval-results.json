@@ -1,0 +1,2770 @@
+{
+  "datasetSize": 46,
+  "generatedAt": "2026-11-14T10:06:05.271Z",
+  "model": "gemini-3.8-flash",
+  "configurations": {
+    "heuristicsOnly": {
+      "overall": {
+        "sampleCount": 46,
+        "errorCount": 0,
+        "metrics": {
+          "sampleCount": 46,
+          "accuracy": 0.32608695652173914,
+          "perClass": {
+            "safe": {
+              "precision": 0.35135135135135137,
+              "recall": 1,
+              "f1": 0.52
+            },
+            "suspicious": {
+              "precision": 0,
+              "recall": 0,
+              "f1": 0
+            },
+            "scam": {
+              "precision": 1,
+              "recall": 0.07407407407407407,
+              "f1": 0.13793103448275862
+            }
+          },
+          "macroF1": 0.21931034482758624,
+          "confusionMatrix": {
+            "safe": {
+              "safe": 13,
+              "suspicious": 0,
+              "scam": 0
+            },
+            "suspicious": {
+              "safe": 6,
+              "suspicious": 0,
+              "scam": 0
+            },
+            "scam": {
+              "safe": 18,
+              "suspicious": 7,
+              "scam": 2
+            }
+          },
+          "scamDetection": {
+            "precision": 1,
+            "recall": 0.2727272727272727,
+            "f1": 0.42857142857142855,
+            "falsePositiveRate": 0
+          }
+        },
+        "averageLatencyMs": 2.0652173913043477,
+        "p95LatencyMs": 4
+      },
+      "tune": {
+        "sampleCount": 27,
+        "errorCount": 0,
+        "metrics": {
+          "sampleCount": 27,
+          "accuracy": 0.37037037037037035,
+          "perClass": {
+            "safe": {
+              "precision": 0.36363636363636365,
+              "recall": 1,
+              "f1": 0.5333333333333333
+            },
+            "suspicious": {
+              "precision": 0,
+              "recall": 0,
+              "f1": 0
+            },
+            "scam": {
+              "precision": 1,
+              "recall": 0.125,
+              "f1": 0.2222222222222222
+            }
+          },
+          "macroF1": 0.2518518518518518,
+          "confusionMatrix": {
+            "safe": {
+              "safe": 8,
+              "suspicious": 0,
+              "scam": 0
+            },
+            "suspicious": {
+              "safe": 3,
+              "suspicious": 0,
+              "scam": 0
+            },
+            "scam": {
+              "safe": 11,
+              "suspicious": 3,
+              "scam": 2
+            }
+          },
+          "scamDetection": {
+            "precision": 1,
+            "recall": 0.2631578947368421,
+            "f1": 0.4166666666666667,
+            "falsePositiveRate": 0
+          }
+        },
+        "averageLatencyMs": 2.962962962962963,
+        "p95LatencyMs": 20
+      },
+      "holdout": {
+        "sampleCount": 19,
+        "errorCount": 0,
+        "metrics": {
+          "sampleCount": 19,
+          "accuracy": 0.2631578947368421,
+          "perClass": {
+            "safe": {
+              "precision": 0.3333333333333333,
+              "recall": 1,
+              "f1": 0.5
+            },
+            "suspicious": {
+              "precision": 0,
+              "recall": 0,
+              "f1": 0
+            },
+            "scam": {
+              "precision": 0,
+              "recall": 0,
+              "f1": 0
+            }
+          },
+          "macroF1": 0.16666666666666666,
+          "confusionMatrix": {
+            "safe": {
+              "safe": 5,
+              "suspicious": 0,
+              "scam": 0
+            },
+            "suspicious": {
+              "safe": 3,
+              "suspicious": 0,
+              "scam": 0
+            },
+            "scam": {
+              "safe": 7,
+              "suspicious": 4,
+              "scam": 0
+            }
+          },
+          "scamDetection": {
+            "precision": 1,
+            "recall": 0.2857142857142857,
+            "f1": 0.4444444444444445,
+            "falsePositiveRate": 0
+          }
+        },
+        "averageLatencyMs": 0.7894736842105263,
+        "p95LatencyMs": 2
+      },
+      "items": [
+        {
+          "id": "e01",
+          "expected": "scam",
+          "predicted": "suspicious",
+          "score": 48,
+          "latencyMs": 21,
+          "split": "tune"
+        },
+        {
+          "id": "e02",
+          "expected": "scam",
+          "predicted": "scam",
+          "score": 77,
+          "latencyMs": 20,
+          "split": "tune"
+        },
+        {
+          "id": "e03",
+          "expected": "scam",
+          "predicted": "suspicious",
+          "score": 51,
+          "latencyMs": 4,
+          "split": "tune"
+        },
+        {
+          "id": "e04",
+          "expected": "scam",
+          "predicted": "scam",
+          "score": 68,
+          "latencyMs": 4,
+          "split": "tune"
+        },
+        {
+          "id": "e05",
+          "expected": "scam",
+          "predicted": "safe",
+          "score": 28,
+          "latencyMs": 4,
+          "split": "tune"
+        },
+        {
+          "id": "e06",
+          "expected": "scam",
+          "predicted": "safe",
+          "score": 15,
+          "latencyMs": 4,
+          "split": "tune"
+        },
+        {
+          "id": "e07",
+          "expected": "scam",
+          "predicted": "safe",
+          "score": 27,
+          "latencyMs": 2,
+          "split": "tune"
+        },
+        {
+          "id": "e08",
+          "expected": "scam",
+          "predicted": "safe",
+          "score": 14,
+          "latencyMs": 2,
+          "split": "tune"
+        },
+        {
+          "id": "e09",
+          "expected": "scam",
+          "predicted": "safe",
+          "score": 20,
+          "latencyMs": 2,
+          "split": "tune"
+        },
+        {
+          "id": "e10",
+          "expected": "scam",
+          "predicted": "safe",
+          "score": 30,
+          "latencyMs": 2,
+          "split": "tune"
+        },
+        {
+          "id": "e11",
+          "expected": "scam",
+          "predicted": "safe",
+          "score": 23,
+          "latencyMs": 1,
+          "split": "tune"
+        },
+        {
+          "id": "e12",
+          "expected": "scam",
+          "predicted": "safe",
+          "score": 16,
+          "latencyMs": 1,
+          "split": "tune"
+        },
+        {
+          "id": "e13",
+          "expected": "scam",
+          "predicted": "safe",
+          "score": 25,
+          "latencyMs": 1,
+          "split": "tune"
+        },
+        {
+          "id": "e14",
+          "expected": "scam",
+          "predicted": "safe",
+          "score": 12,
+          "latencyMs": 1,
+          "split": "tune"
+        },
+        {
+          "id": "e15",
+          "expected": "scam",
+          "predicted": "safe",
+          "score": 20,
+          "latencyMs": 0,
+          "split": "holdout"
+        },
+        {
+          "id": "e16",
+          "expected": "scam",
+          "predicted": "safe",
+          "score": 6,
+          "latencyMs": 0,
+          "split": "holdout"
+        },
+        {
+          "id": "e17",
+          "expected": "scam",
+          "predicted": "safe",
+          "score": 16,
+          "latencyMs": 1,
+          "split": "holdout"
+        },
+        {
+          "id": "e18",
+          "expected": "scam",
+          "predicted": "safe",
+          "score": 15,
+          "latencyMs": 1,
+          "split": "holdout"
+        },
+        {
+          "id": "e19",
+          "expected": "scam",
+          "predicted": "suspicious",
+          "score": 43,
+          "latencyMs": 0,
+          "split": "holdout"
+        },
+        {
+          "id": "e20",
+          "expected": "scam",
+          "predicted": "suspicious",
+          "score": 36,
+          "latencyMs": 0,
+          "split": "holdout"
+        },
+        {
+          "id": "e21",
+          "expected": "safe",
+          "predicted": "safe",
+          "score": 0,
+          "latencyMs": 1,
+          "split": "tune"
+        },
+        {
+          "id": "e22",
+          "expected": "safe",
+          "predicted": "safe",
+          "score": 0,
+          "latencyMs": 1,
+          "split": "tune"
+        },
+        {
+          "id": "e23",
+          "expected": "safe",
+          "predicted": "safe",
+          "score": 0,
+          "latencyMs": 0,
+          "split": "tune"
+        },
+        {
+          "id": "e24",
+          "expected": "safe",
+          "predicted": "safe",
+          "score": 0,
+          "latencyMs": 0,
+          "split": "tune"
+        },
+        {
+          "id": "e25",
+          "expected": "safe",
+          "predicted": "safe",
+          "score": 0,
+          "latencyMs": 1,
+          "split": "tune"
+        },
+        {
+          "id": "e26",
+          "expected": "safe",
+          "predicted": "safe",
+          "score": 0,
+          "latencyMs": 1,
+          "split": "tune"
+        },
+        {
+          "id": "e27",
+          "expected": "safe",
+          "predicted": "safe",
+          "score": 0,
+          "latencyMs": 0,
+          "split": "holdout"
+        },
+        {
+          "id": "e28",
+          "expected": "safe",
+          "predicted": "safe",
+          "score": 0,
+          "latencyMs": 0,
+          "split": "holdout"
+        },
+        {
+          "id": "e29",
+          "expected": "safe",
+          "predicted": "safe",
+          "score": 0,
+          "latencyMs": 1,
+          "split": "holdout"
+        },
+        {
+          "id": "e30",
+          "expected": "safe",
+          "predicted": "safe",
+          "score": 0,
+          "latencyMs": 1,
+          "split": "holdout"
+        },
+        {
+          "id": "e31",
+          "expected": "suspicious",
+          "predicted": "safe",
+          "score": 6,
+          "latencyMs": 0,
+          "split": "tune"
+        },
+        {
+          "id": "e32",
+          "expected": "suspicious",
+          "predicted": "safe",
+          "score": 11,
+          "latencyMs": 0,
+          "split": "tune"
+        },
+        {
+          "id": "e33",
+          "expected": "suspicious",
+          "predicted": "safe",
+          "score": 0,
+          "latencyMs": 2,
+          "split": "tune"
+        },
+        {
+          "id": "e34",
+          "expected": "suspicious",
+          "predicted": "safe",
+          "score": 0,
+          "latencyMs": 1,
+          "split": "holdout"
+        },
+        {
+          "id": "e35",
+          "expected": "suspicious",
+          "predicted": "safe",
+          "score": 12,
+          "latencyMs": 1,
+          "split": "holdout"
+        },
+        {
+          "id": "e36",
+          "expected": "suspicious",
+          "predicted": "safe",
+          "score": 8,
+          "latencyMs": 1,
+          "split": "holdout"
+        },
+        {
+          "id": "e37",
+          "expected": "scam",
+          "predicted": "suspicious",
+          "score": 51,
+          "latencyMs": 1,
+          "split": "tune"
+        },
+        {
+          "id": "e38",
+          "expected": "scam",
+          "predicted": "suspicious",
+          "score": 39,
+          "latencyMs": 1,
+          "split": "holdout"
+        },
+        {
+          "id": "e39",
+          "expected": "scam",
+          "predicted": "safe",
+          "score": 20,
+          "latencyMs": 2,
+          "split": "holdout"
+        },
+        {
+          "id": "e40",
+          "expected": "scam",
+          "predicted": "suspicious",
+          "score": 60,
+          "latencyMs": 2,
+          "split": "holdout"
+        },
+        {
+          "id": "e41",
+          "expected": "scam",
+          "predicted": "safe",
+          "score": 2,
+          "latencyMs": 2,
+          "split": "tune"
+        },
+        {
+          "id": "e42",
+          "expected": "scam",
+          "predicted": "safe",
+          "score": 9,
+          "latencyMs": 2,
+          "split": "holdout"
+        },
+        {
+          "id": "e43",
+          "expected": "scam",
+          "predicted": "safe",
+          "score": 0,
+          "latencyMs": 1,
+          "split": "holdout"
+        },
+        {
+          "id": "e44",
+          "expected": "safe",
+          "predicted": "safe",
+          "score": 0,
+          "latencyMs": 1,
+          "split": "tune"
+        },
+        {
+          "id": "e45",
+          "expected": "safe",
+          "predicted": "safe",
+          "score": 0,
+          "latencyMs": 1,
+          "split": "tune"
+        },
+        {
+          "id": "e46",
+          "expected": "safe",
+          "predicted": "safe",
+          "score": 0,
+          "latencyMs": 0,
+          "split": "holdout"
+        }
+      ]
+    },
+    "llmOnly": {
+      "overall": {
+        "sampleCount": 0,
+        "errorCount": 46,
+        "metrics": {
+          "sampleCount": 0,
+          "accuracy": 0,
+          "perClass": {
+            "safe": {
+              "precision": 0,
+              "recall": 0,
+              "f1": 0
+            },
+            "suspicious": {
+              "precision": 0,
+              "recall": 0,
+              "f1": 0
+            },
+            "scam": {
+              "precision": 0,
+              "recall": 0,
+              "f1": 0
+            }
+          },
+          "macroF1": 0,
+          "confusionMatrix": {
+            "safe": {
+              "safe": 0,
+              "suspicious": 0,
+              "scam": 0
+            },
+            "suspicious": {
+              "safe": 0,
+              "suspicious": 0,
+              "scam": 0
+            },
+            "scam": {
+              "safe": 0,
+              "suspicious": 0,
+              "scam": 0
+            }
+          },
+          "scamDetection": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0,
+            "falsePositiveRate": 0
+          }
+        },
+        "averageLatencyMs": 259.17391304347825,
+        "p95LatencyMs": 508
+      },
+      "tune": {
+        "sampleCount": 0,
+        "errorCount": 27,
+        "metrics": {
+          "sampleCount": 0,
+          "accuracy": 0,
+          "perClass": {
+            "safe": {
+              "precision": 0,
+              "recall": 0,
+              "f1": 0
+            },
+            "suspicious": {
+              "precision": 0,
+              "recall": 0,
+              "f1": 0
+            },
+            "scam": {
+              "precision": 0,
+              "recall": 0,
+              "f1": 0
+            }
+          },
+          "macroF1": 0,
+          "confusionMatrix": {
+            "safe": {
+              "safe": 0,
+              "suspicious": 0,
+              "scam": 0
+            },
+            "suspicious": {
+              "safe": 0,
+              "suspicious": 0,
+              "scam": 0
+            },
+            "scam": {
+              "safe": 0,
+              "suspicious": 0,
+              "scam": 0
+            }
+          },
+          "scamDetection": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0,
+            "falsePositiveRate": 0
+          }
+        },
+        "averageLatencyMs": 278.4074074074074,
+        "p95LatencyMs": 1145
+      },
+      "holdout": {
+        "sampleCount": 0,
+        "errorCount": 19,
+        "metrics": {
+          "sampleCount": 0,
+          "accuracy": 0,
+          "perClass": {
+            "safe": {
+              "precision": 0,
+              "recall": 0,
+              "f1": 0
+            },
+            "suspicious": {
+              "precision": 0,
+              "recall": 0,
+              "f1": 0
+            },
+            "scam": {
+              "precision": 0,
+              "recall": 0,
+              "f1": 0
+            }
+          },
+          "macroF1": 0,
+          "confusionMatrix": {
+            "safe": {
+              "safe": 0,
+              "suspicious": 0,
+              "scam": 0
+            },
+            "suspicious": {
+              "safe": 0,
+              "suspicious": 0,
+              "scam": 0
+            },
+            "scam": {
+              "safe": 0,
+              "suspicious": 0,
+              "scam": 0
+            }
+          },
+          "scamDetection": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0,
+            "falsePositiveRate": 0
+          }
+        },
+        "averageLatencyMs": 231.8421052631579,
+        "p95LatencyMs": 508
+      },
+      "items": [
+        {
+          "id": "e01",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 1145,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e02",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 1152,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e03",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 152,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e04",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 138,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e05",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 156,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e06",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 132,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e07",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 146,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e08",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 157,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e09",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 411,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e10",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 384,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e11",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 203,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e12",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 200,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e13",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 133,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e14",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 133,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e15",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 203,
+          "split": "holdout",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e16",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 205,
+          "split": "holdout",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e17",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 175,
+          "split": "holdout",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e18",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 508,
+          "split": "holdout",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e19",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 204,
+          "split": "holdout",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e20",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 134,
+          "split": "holdout",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e21",
+          "expected": "safe",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 176,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e22",
+          "expected": "safe",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 171,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e23",
+          "expected": "safe",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 386,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e24",
+          "expected": "safe",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 126,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e25",
+          "expected": "safe",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 263,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e26",
+          "expected": "safe",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 144,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e27",
+          "expected": "safe",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 147,
+          "split": "holdout",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e28",
+          "expected": "safe",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 297,
+          "split": "holdout",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e29",
+          "expected": "safe",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 286,
+          "split": "holdout",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e30",
+          "expected": "safe",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 300,
+          "split": "holdout",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e31",
+          "expected": "suspicious",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 300,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e32",
+          "expected": "suspicious",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 134,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e33",
+          "expected": "suspicious",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 121,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e34",
+          "expected": "suspicious",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 199,
+          "split": "holdout",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e35",
+          "expected": "suspicious",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 190,
+          "split": "holdout",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e36",
+          "expected": "suspicious",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 298,
+          "split": "holdout",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e37",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 297,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e38",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 201,
+          "split": "holdout",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e39",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 200,
+          "split": "holdout",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e40",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 204,
+          "split": "holdout",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e41",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 206,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e42",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 198,
+          "split": "holdout",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e43",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 194,
+          "split": "holdout",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e44",
+          "expected": "safe",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 411,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e45",
+          "expected": "safe",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 140,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e46",
+          "expected": "safe",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 262,
+          "split": "holdout",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        }
+      ]
+    },
+    "fullPipeline": {
+      "overall": {
+        "sampleCount": 0,
+        "errorCount": 46,
+        "metrics": {
+          "sampleCount": 0,
+          "accuracy": 0,
+          "perClass": {
+            "safe": {
+              "precision": 0,
+              "recall": 0,
+              "f1": 0
+            },
+            "suspicious": {
+              "precision": 0,
+              "recall": 0,
+              "f1": 0
+            },
+            "scam": {
+              "precision": 0,
+              "recall": 0,
+              "f1": 0
+            }
+          },
+          "macroF1": 0,
+          "confusionMatrix": {
+            "safe": {
+              "safe": 0,
+              "suspicious": 0,
+              "scam": 0
+            },
+            "suspicious": {
+              "safe": 0,
+              "suspicious": 0,
+              "scam": 0
+            },
+            "scam": {
+              "safe": 0,
+              "suspicious": 0,
+              "scam": 0
+            }
+          },
+          "scamDetection": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0,
+            "falsePositiveRate": 0
+          }
+        },
+        "averageLatencyMs": 424.4782608695652,
+        "p95LatencyMs": 919
+      },
+      "tune": {
+        "sampleCount": 0,
+        "errorCount": 27,
+        "metrics": {
+          "sampleCount": 0,
+          "accuracy": 0,
+          "perClass": {
+            "safe": {
+              "precision": 0,
+              "recall": 0,
+              "f1": 0
+            },
+            "suspicious": {
+              "precision": 0,
+              "recall": 0,
+              "f1": 0
+            },
+            "scam": {
+              "precision": 0,
+              "recall": 0,
+              "f1": 0
+            }
+          },
+          "macroF1": 0,
+          "confusionMatrix": {
+            "safe": {
+              "safe": 0,
+              "suspicious": 0,
+              "scam": 0
+            },
+            "suspicious": {
+              "safe": 0,
+              "suspicious": 0,
+              "scam": 0
+            },
+            "scam": {
+              "safe": 0,
+              "suspicious": 0,
+              "scam": 0
+            }
+          },
+          "scamDetection": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0,
+            "falsePositiveRate": 0
+          }
+        },
+        "averageLatencyMs": 472.55555555555554,
+        "p95LatencyMs": 930
+      },
+      "holdout": {
+        "sampleCount": 0,
+        "errorCount": 19,
+        "metrics": {
+          "sampleCount": 0,
+          "accuracy": 0,
+          "perClass": {
+            "safe": {
+              "precision": 0,
+              "recall": 0,
+              "f1": 0
+            },
+            "suspicious": {
+              "precision": 0,
+              "recall": 0,
+              "f1": 0
+            },
+            "scam": {
+              "precision": 0,
+              "recall": 0,
+              "f1": 0
+            }
+          },
+          "macroF1": 0,
+          "confusionMatrix": {
+            "safe": {
+              "safe": 0,
+              "suspicious": 0,
+              "scam": 0
+            },
+            "suspicious": {
+              "safe": 0,
+              "suspicious": 0,
+              "scam": 0
+            },
+            "scam": {
+              "safe": 0,
+              "suspicious": 0,
+              "scam": 0
+            }
+          },
+          "scamDetection": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0,
+            "falsePositiveRate": 0
+          }
+        },
+        "averageLatencyMs": 356.1578947368421,
+        "p95LatencyMs": 642
+      },
+      "items": [
+        {
+          "id": "e01",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 930,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e02",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 919,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e03",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 420,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e04",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 417,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e05",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 308,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e06",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 504,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e07",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 506,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e08",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 317,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e09",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 313,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e10",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 935,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e11",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 509,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e12",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 312,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e13",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 319,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e14",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 305,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e15",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 291,
+          "split": "holdout",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e16",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 237,
+          "split": "holdout",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e17",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 491,
+          "split": "holdout",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e18",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 376,
+          "split": "holdout",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e19",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 314,
+          "split": "holdout",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e20",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 315,
+          "split": "holdout",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e21",
+          "expected": "safe",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 719,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e22",
+          "expected": "safe",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 718,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e23",
+          "expected": "safe",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 299,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e24",
+          "expected": "safe",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 296,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e25",
+          "expected": "safe",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 416,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e26",
+          "expected": "safe",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 416,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e27",
+          "expected": "safe",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 302,
+          "split": "holdout",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e28",
+          "expected": "safe",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 294,
+          "split": "holdout",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e29",
+          "expected": "safe",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 319,
+          "split": "holdout",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e30",
+          "expected": "safe",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 317,
+          "split": "holdout",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e31",
+          "expected": "suspicious",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 511,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e32",
+          "expected": "suspicious",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 503,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e33",
+          "expected": "suspicious",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 387,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e34",
+          "expected": "suspicious",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 388,
+          "split": "holdout",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e35",
+          "expected": "suspicious",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 642,
+          "split": "holdout",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e36",
+          "expected": "suspicious",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 406,
+          "split": "holdout",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e37",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 354,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e38",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 313,
+          "split": "holdout",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e39",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 322,
+          "split": "holdout",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e40",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 322,
+          "split": "holdout",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e41",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 472,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e42",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 483,
+          "split": "holdout",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e43",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 219,
+          "split": "holdout",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e44",
+          "expected": "safe",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 339,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e45",
+          "expected": "safe",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 315,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e46",
+          "expected": "safe",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 416,
+          "split": "holdout",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        }
+      ]
+    },
+    "fullThreatIntelRegistry": {
+      "overall": {
+        "sampleCount": 0,
+        "errorCount": 46,
+        "metrics": {
+          "sampleCount": 0,
+          "accuracy": 0,
+          "perClass": {
+            "safe": {
+              "precision": 0,
+              "recall": 0,
+              "f1": 0
+            },
+            "suspicious": {
+              "precision": 0,
+              "recall": 0,
+              "f1": 0
+            },
+            "scam": {
+              "precision": 0,
+              "recall": 0,
+              "f1": 0
+            }
+          },
+          "macroF1": 0,
+          "confusionMatrix": {
+            "safe": {
+              "safe": 0,
+              "suspicious": 0,
+              "scam": 0
+            },
+            "suspicious": {
+              "safe": 0,
+              "suspicious": 0,
+              "scam": 0
+            },
+            "scam": {
+              "safe": 0,
+              "suspicious": 0,
+              "scam": 0
+            }
+          },
+          "scamDetection": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0,
+            "falsePositiveRate": 0
+          }
+        },
+        "averageLatencyMs": 427.60869565217394,
+        "p95LatencyMs": 761
+      },
+      "tune": {
+        "sampleCount": 0,
+        "errorCount": 27,
+        "metrics": {
+          "sampleCount": 0,
+          "accuracy": 0,
+          "perClass": {
+            "safe": {
+              "precision": 0,
+              "recall": 0,
+              "f1": 0
+            },
+            "suspicious": {
+              "precision": 0,
+              "recall": 0,
+              "f1": 0
+            },
+            "scam": {
+              "precision": 0,
+              "recall": 0,
+              "f1": 0
+            }
+          },
+          "macroF1": 0,
+          "confusionMatrix": {
+            "safe": {
+              "safe": 0,
+              "suspicious": 0,
+              "scam": 0
+            },
+            "suspicious": {
+              "safe": 0,
+              "suspicious": 0,
+              "scam": 0
+            },
+            "scam": {
+              "safe": 0,
+              "suspicious": 0,
+              "scam": 0
+            }
+          },
+          "scamDetection": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0,
+            "falsePositiveRate": 0
+          }
+        },
+        "averageLatencyMs": 356,
+        "p95LatencyMs": 418
+      },
+      "holdout": {
+        "sampleCount": 0,
+        "errorCount": 19,
+        "metrics": {
+          "sampleCount": 0,
+          "accuracy": 0,
+          "perClass": {
+            "safe": {
+              "precision": 0,
+              "recall": 0,
+              "f1": 0
+            },
+            "suspicious": {
+              "precision": 0,
+              "recall": 0,
+              "f1": 0
+            },
+            "scam": {
+              "precision": 0,
+              "recall": 0,
+              "f1": 0
+            }
+          },
+          "macroF1": 0,
+          "confusionMatrix": {
+            "safe": {
+              "safe": 0,
+              "suspicious": 0,
+              "scam": 0
+            },
+            "suspicious": {
+              "safe": 0,
+              "suspicious": 0,
+              "scam": 0
+            },
+            "scam": {
+              "safe": 0,
+              "suspicious": 0,
+              "scam": 0
+            }
+          },
+          "scamDetection": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0,
+            "falsePositiveRate": 0
+          }
+        },
+        "averageLatencyMs": 529.3684210526316,
+        "p95LatencyMs": 1001
+      },
+      "items": [
+        {
+          "id": "e01",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 320,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e02",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 312,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e03",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 300,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e04",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 295,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e05",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 306,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e06",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 298,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e07",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 288,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e08",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 285,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e09",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 416,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e10",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 409,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e11",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 418,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e12",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 408,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e13",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 342,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e14",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 336,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e15",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 419,
+          "split": "holdout",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e16",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 701,
+          "split": "holdout",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e17",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 281,
+          "split": "holdout",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e18",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 1001,
+          "split": "holdout",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e19",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 1001,
+          "split": "holdout",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e20",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 306,
+          "split": "holdout",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e21",
+          "expected": "safe",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 308,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e22",
+          "expected": "safe",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 684,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e23",
+          "expected": "safe",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 407,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e24",
+          "expected": "safe",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 275,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e25",
+          "expected": "safe",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 342,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e26",
+          "expected": "safe",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 341,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e27",
+          "expected": "safe",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 304,
+          "split": "holdout",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e28",
+          "expected": "safe",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 302,
+          "split": "holdout",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e29",
+          "expected": "safe",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 314,
+          "split": "holdout",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e30",
+          "expected": "safe",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 309,
+          "split": "holdout",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e31",
+          "expected": "suspicious",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 339,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e32",
+          "expected": "suspicious",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 324,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e33",
+          "expected": "suspicious",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 387,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e34",
+          "expected": "suspicious",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 381,
+          "split": "holdout",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e35",
+          "expected": "suspicious",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 742,
+          "split": "holdout",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e36",
+          "expected": "suspicious",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 747,
+          "split": "holdout",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e37",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 399,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e38",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 395,
+          "split": "holdout",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e39",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 700,
+          "split": "holdout",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e40",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 695,
+          "split": "holdout",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e41",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 340,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e42",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 365,
+          "split": "holdout",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e43",
+          "expected": "scam",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 761,
+          "split": "holdout",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e44",
+          "expected": "safe",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 413,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e45",
+          "expected": "safe",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 320,
+          "split": "tune",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        },
+        {
+          "id": "e46",
+          "expected": "safe",
+          "predicted": "error",
+          "score": null,
+          "latencyMs": 334,
+          "split": "holdout",
+          "error": "Gemini failed or returned an invalid verdict; fallback excluded."
+        }
+      ]
+    },
+    "rulesThreatIntel": {
+      "overall": {
+        "sampleCount": 46,
+        "errorCount": 0,
+        "metrics": {
+          "sampleCount": 46,
+          "accuracy": 0.32608695652173914,
+          "perClass": {
+            "safe": {
+              "precision": 0.38235294117647056,
+              "recall": 1,
+              "f1": 0.5531914893617021
+            },
+            "suspicious": {
+              "precision": 0,
+              "recall": 0,
+              "f1": 0
+            },
+            "scam": {
+              "precision": 1,
+              "recall": 0.07407407407407407,
+              "f1": 0.13793103448275862
+            }
+          },
+          "macroF1": 0.23037417461482024,
+          "confusionMatrix": {
+            "safe": {
+              "safe": 13,
+              "suspicious": 0,
+              "scam": 0
+            },
+            "suspicious": {
+              "safe": 6,
+              "suspicious": 0,
+              "scam": 0
+            },
+            "scam": {
+              "safe": 15,
+              "suspicious": 10,
+              "scam": 2
+            }
+          },
+          "scamDetection": {
+            "precision": 1,
+            "recall": 0.36363636363636365,
+            "f1": 0.5333333333333333,
+            "falsePositiveRate": 0
+          }
+        },
+        "averageLatencyMs": 0.7608695652173914,
+        "p95LatencyMs": 1
+      },
+      "tune": {
+        "sampleCount": 27,
+        "errorCount": 0,
+        "metrics": {
+          "sampleCount": 27,
+          "accuracy": 0.37037037037037035,
+          "perClass": {
+            "safe": {
+              "precision": 0.38095238095238093,
+              "recall": 1,
+              "f1": 0.5517241379310345
+            },
+            "suspicious": {
+              "precision": 0,
+              "recall": 0,
+              "f1": 0
+            },
+            "scam": {
+              "precision": 1,
+              "recall": 0.125,
+              "f1": 0.2222222222222222
+            }
+          },
+          "macroF1": 0.25798212005108556,
+          "confusionMatrix": {
+            "safe": {
+              "safe": 8,
+              "suspicious": 0,
+              "scam": 0
+            },
+            "suspicious": {
+              "safe": 3,
+              "suspicious": 0,
+              "scam": 0
+            },
+            "scam": {
+              "safe": 10,
+              "suspicious": 4,
+              "scam": 2
+            }
+          },
+          "scamDetection": {
+            "precision": 1,
+            "recall": 0.3157894736842105,
+            "f1": 0.4799999999999999,
+            "falsePositiveRate": 0
+          }
+        },
+        "averageLatencyMs": 0.6296296296296297,
+        "p95LatencyMs": 1
+      },
+      "holdout": {
+        "sampleCount": 19,
+        "errorCount": 0,
+        "metrics": {
+          "sampleCount": 19,
+          "accuracy": 0.2631578947368421,
+          "perClass": {
+            "safe": {
+              "precision": 0.38461538461538464,
+              "recall": 1,
+              "f1": 0.5555555555555556
+            },
+            "suspicious": {
+              "precision": 0,
+              "recall": 0,
+              "f1": 0
+            },
+            "scam": {
+              "precision": 0,
+              "recall": 0,
+              "f1": 0
+            }
+          },
+          "macroF1": 0.1851851851851852,
+          "confusionMatrix": {
+            "safe": {
+              "safe": 5,
+              "suspicious": 0,
+              "scam": 0
+            },
+            "suspicious": {
+              "safe": 3,
+              "suspicious": 0,
+              "scam": 0
+            },
+            "scam": {
+              "safe": 5,
+              "suspicious": 6,
+              "scam": 0
+            }
+          },
+          "scamDetection": {
+            "precision": 1,
+            "recall": 0.42857142857142855,
+            "f1": 0.6,
+            "falsePositiveRate": 0
+          }
+        },
+        "averageLatencyMs": 0.9473684210526315,
+        "p95LatencyMs": 4
+      },
+      "items": [
+        {
+          "id": "e01",
+          "expected": "scam",
+          "predicted": "suspicious",
+          "score": 48,
+          "latencyMs": 0,
+          "split": "tune"
+        },
+        {
+          "id": "e02",
+          "expected": "scam",
+          "predicted": "scam",
+          "score": 77,
+          "latencyMs": 0,
+          "split": "tune"
+        },
+        {
+          "id": "e03",
+          "expected": "scam",
+          "predicted": "suspicious",
+          "score": 51,
+          "latencyMs": 1,
+          "split": "tune"
+        },
+        {
+          "id": "e04",
+          "expected": "scam",
+          "predicted": "scam",
+          "score": 68,
+          "latencyMs": 1,
+          "split": "tune"
+        },
+        {
+          "id": "e05",
+          "expected": "scam",
+          "predicted": "safe",
+          "score": 28,
+          "latencyMs": 1,
+          "split": "tune"
+        },
+        {
+          "id": "e06",
+          "expected": "scam",
+          "predicted": "safe",
+          "score": 15,
+          "latencyMs": 1,
+          "split": "tune"
+        },
+        {
+          "id": "e07",
+          "expected": "scam",
+          "predicted": "safe",
+          "score": 27,
+          "latencyMs": 1,
+          "split": "tune"
+        },
+        {
+          "id": "e08",
+          "expected": "scam",
+          "predicted": "safe",
+          "score": 14,
+          "latencyMs": 1,
+          "split": "tune"
+        },
+        {
+          "id": "e09",
+          "expected": "scam",
+          "predicted": "safe",
+          "score": 20,
+          "latencyMs": 1,
+          "split": "tune"
+        },
+        {
+          "id": "e10",
+          "expected": "scam",
+          "predicted": "safe",
+          "score": 30,
+          "latencyMs": 1,
+          "split": "tune"
+        },
+        {
+          "id": "e11",
+          "expected": "scam",
+          "predicted": "safe",
+          "score": 23,
+          "latencyMs": 0,
+          "split": "tune"
+        },
+        {
+          "id": "e12",
+          "expected": "scam",
+          "predicted": "safe",
+          "score": 16,
+          "latencyMs": 0,
+          "split": "tune"
+        },
+        {
+          "id": "e13",
+          "expected": "scam",
+          "predicted": "safe",
+          "score": 25,
+          "latencyMs": 1,
+          "split": "tune"
+        },
+        {
+          "id": "e14",
+          "expected": "scam",
+          "predicted": "safe",
+          "score": 12,
+          "latencyMs": 1,
+          "split": "tune"
+        },
+        {
+          "id": "e15",
+          "expected": "scam",
+          "predicted": "safe",
+          "score": 20,
+          "latencyMs": 0,
+          "split": "holdout"
+        },
+        {
+          "id": "e16",
+          "expected": "scam",
+          "predicted": "safe",
+          "score": 6,
+          "latencyMs": 0,
+          "split": "holdout"
+        },
+        {
+          "id": "e17",
+          "expected": "scam",
+          "predicted": "safe",
+          "score": 16,
+          "latencyMs": 1,
+          "split": "holdout"
+        },
+        {
+          "id": "e18",
+          "expected": "scam",
+          "predicted": "safe",
+          "score": 15,
+          "latencyMs": 0,
+          "split": "holdout"
+        },
+        {
+          "id": "e19",
+          "expected": "scam",
+          "predicted": "suspicious",
+          "score": 43,
+          "latencyMs": 1,
+          "split": "holdout"
+        },
+        {
+          "id": "e20",
+          "expected": "scam",
+          "predicted": "suspicious",
+          "score": 36,
+          "latencyMs": 1,
+          "split": "holdout"
+        },
+        {
+          "id": "e21",
+          "expected": "safe",
+          "predicted": "safe",
+          "score": 0,
+          "latencyMs": 1,
+          "split": "tune"
+        },
+        {
+          "id": "e22",
+          "expected": "safe",
+          "predicted": "safe",
+          "score": 0,
+          "latencyMs": 1,
+          "split": "tune"
+        },
+        {
+          "id": "e23",
+          "expected": "safe",
+          "predicted": "safe",
+          "score": 0,
+          "latencyMs": 0,
+          "split": "tune"
+        },
+        {
+          "id": "e24",
+          "expected": "safe",
+          "predicted": "safe",
+          "score": 0,
+          "latencyMs": 0,
+          "split": "tune"
+        },
+        {
+          "id": "e25",
+          "expected": "safe",
+          "predicted": "safe",
+          "score": 0,
+          "latencyMs": 0,
+          "split": "tune"
+        },
+        {
+          "id": "e26",
+          "expected": "safe",
+          "predicted": "safe",
+          "score": 0,
+          "latencyMs": 0,
+          "split": "tune"
+        },
+        {
+          "id": "e27",
+          "expected": "safe",
+          "predicted": "safe",
+          "score": 0,
+          "latencyMs": 0,
+          "split": "holdout"
+        },
+        {
+          "id": "e28",
+          "expected": "safe",
+          "predicted": "safe",
+          "score": 0,
+          "latencyMs": 0,
+          "split": "holdout"
+        },
+        {
+          "id": "e29",
+          "expected": "safe",
+          "predicted": "safe",
+          "score": 0,
+          "latencyMs": 1,
+          "split": "holdout"
+        },
+        {
+          "id": "e30",
+          "expected": "safe",
+          "predicted": "safe",
+          "score": 0,
+          "latencyMs": 1,
+          "split": "holdout"
+        },
+        {
+          "id": "e31",
+          "expected": "suspicious",
+          "predicted": "safe",
+          "score": 6,
+          "latencyMs": 1,
+          "split": "tune"
+        },
+        {
+          "id": "e32",
+          "expected": "suspicious",
+          "predicted": "safe",
+          "score": 11,
+          "latencyMs": 1,
+          "split": "tune"
+        },
+        {
+          "id": "e33",
+          "expected": "suspicious",
+          "predicted": "safe",
+          "score": 0,
+          "latencyMs": 0,
+          "split": "tune"
+        },
+        {
+          "id": "e34",
+          "expected": "suspicious",
+          "predicted": "safe",
+          "score": 0,
+          "latencyMs": 0,
+          "split": "holdout"
+        },
+        {
+          "id": "e35",
+          "expected": "suspicious",
+          "predicted": "safe",
+          "score": 12,
+          "latencyMs": 4,
+          "split": "holdout"
+        },
+        {
+          "id": "e36",
+          "expected": "suspicious",
+          "predicted": "safe",
+          "score": 8,
+          "latencyMs": 4,
+          "split": "holdout"
+        },
+        {
+          "id": "e37",
+          "expected": "scam",
+          "predicted": "suspicious",
+          "score": 51,
+          "latencyMs": 1,
+          "split": "tune"
+        },
+        {
+          "id": "e38",
+          "expected": "scam",
+          "predicted": "suspicious",
+          "score": 39,
+          "latencyMs": 1,
+          "split": "holdout"
+        },
+        {
+          "id": "e39",
+          "expected": "scam",
+          "predicted": "safe",
+          "score": 20,
+          "latencyMs": 1,
+          "split": "holdout"
+        },
+        {
+          "id": "e40",
+          "expected": "scam",
+          "predicted": "suspicious",
+          "score": 60,
+          "latencyMs": 1,
+          "split": "holdout"
+        },
+        {
+          "id": "e41",
+          "expected": "scam",
+          "predicted": "suspicious",
+          "score": 35,
+          "latencyMs": 1,
+          "split": "tune"
+        },
+        {
+          "id": "e42",
+          "expected": "scam",
+          "predicted": "suspicious",
+          "score": 35,
+          "latencyMs": 1,
+          "split": "holdout"
+        },
+        {
+          "id": "e43",
+          "expected": "scam",
+          "predicted": "suspicious",
+          "score": 35,
+          "latencyMs": 0,
+          "split": "holdout"
+        },
+        {
+          "id": "e44",
+          "expected": "safe",
+          "predicted": "safe",
+          "score": 0,
+          "latencyMs": 0,
+          "split": "tune"
+        },
+        {
+          "id": "e45",
+          "expected": "safe",
+          "predicted": "safe",
+          "score": 0,
+          "latencyMs": 1,
+          "split": "tune"
+        },
+        {
+          "id": "e46",
+          "expected": "safe",
+          "predicted": "safe",
+          "score": 0,
+          "latencyMs": 1,
+          "split": "holdout"
+        }
+      ]
+    }
+  }
+}

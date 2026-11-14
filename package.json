@@ -1,30 +1,48 @@
 {
+  "name": "scamshield-3d",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "build:embeddings": "tsx scripts/build-embeddings.ts",
+    "check:gemini": "tsx scripts/check-gemini.ts",
+    "update:feed": "tsx scripts/update-phish-feed.ts",
+    "prepare:public-eval": "tsx scripts/prepare-public-eval.ts",
+    "eval": "node --conditions=react-server --import tsx scripts/run-eval.ts",
+    "try:pipeline": "node --conditions=react-server --import tsx scripts/try-pipeline.ts"
+  },
   "dependencies": {
     "@google/genai": "^3.3.0",
-    "@react-three/drei": "^10.7.9",
-    "@react-three/fiber": "^9.8.2",
     "clsx": "^2.1.1",
     "framer-motion": "^14.14.0",
-    "lucide-react": "^1.72.0",
+    "lucide-react": "^1.73.0",
+    "next": "15.5.29",
     "next-themes": "^0.4.6",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
     "recharts": "^3.10.1",
     "server-only": "^0.0.1",
     "tailwind-merge": "^3.7.0",
-    "three": "^0.187.0",
     "zod": "^4.6.7",
     "zustand": "^5.1.0"
   },
   "devDependencies": {
-    "@types/node": "^26.6.6",
-    "@types/three": "^0.187.0",
+    "@eslint/eslintrc": "^3.3.7",
+    "@tailwindcss/postcss": "4.3.3",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
     "dotenv": "^18.0.10",
-    "tsx": "^4.23.15"
+    "eslint": "^9",
+    "eslint-config-next": "15.5.29",
+    "tailwindcss": "4.3.3",
+    "tsx": "^4.23.15",
+    "typescript": "^5"
   },
-  "scripts": {
-    "dev": "npm --prefix scamshield-3d run dev",
-    "build": "npm --prefix scamshield-3d run build",
-    "start": "npm --prefix scamshield-3d run start",
-    "lint": "npm --prefix scamshield-3d run lint",
-    "check:gemini": "tsx scripts/check-gemini.ts"
+  "overrides": {
+    "postcss": "8.5.23"
   }
 }
